@@ -1,7 +1,7 @@
 {
   "name": "browl-yaml",
   "version": "0.1.0",
-  "description": "",
+  "description": "Browl yaml db provider to persistence to yaml file",
   "author": "Alexey Kucherenko",
   "main": "index.js",
   "license": "MIT",

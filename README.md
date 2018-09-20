@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/killmenot/browl-yaml.svg?branch=master)](https://travis-ci.org/killmenot/browl-yaml) [![Coverage Status](https://coveralls.io/repos/github/killmenot/browl-plugin-yaml/badge.svg?branch=master)](https://coveralls.io/github/killmenot/browl-yaml?branch=master) [![Dependency Status](https://david-dm.org/killmenot/browl-yaml.svg)](hhttps://david-dm.org/killmenot/browl-yaml) [![npm version](https://img.shields.io/npm/v/browl-yaml.svg)](https://www.npmjs.com/package/browl-yaml)
 
-Browl yaml db browl to persistence to yaml file.
+Browl yaml db provider to persistence to yaml file.
 
 ## LICENSE
 
