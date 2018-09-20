@@ -1,22 +1,22 @@
 {
-  "name": "browl-plugin-yaml",
+  "name": "browl-yaml",
   "version": "0.1.0",
   "description": "",
   "author": "Alexey Kucherenko",
   "main": "index.js",
   "license": "MIT",
-  "homepage": "https://github.com/killmenot/browl-plugin-yaml#readme",
+  "homepage": "https://github.com/killmenot/browl-yaml#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/killmenot/browl-plugin-yaml.git"
+    "url": "git+https://github.com/killmenot/browl-yaml.git"
   },
   "bugs": {
-    "url": "https://github.com/killmenot/browl-plugin-yaml/issues"
+    "url": "https://github.com/killmenot/browl-yaml/issues"
   },
   "scripts": {
     "lint": "eslint lib index.js",
-    "test": "mocha",
-    "coverage": "nyc --reporter=html --reporter=text mocha",
+    "test": "NODE_ENV=test mocha",
+    "coverage": "nyc --reporter=html --reporter=text npm run test",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "pre-commit": [
@@ -25,10 +25,7 @@
   "nyc": {
     "all": true,
     "include": [
-      "tasks/*.js"
-    ],
-    "exclude": [
-      "Gruntfile.js"
+      "lib/*.js"
     ]
   },
   "dependencies": {
