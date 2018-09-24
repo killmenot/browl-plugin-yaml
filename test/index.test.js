@@ -33,7 +33,7 @@ describe('yaml', () => {
   });
 
   describe('#branches', () => {
-    it('should return empty list', ()=> {
+    it('should return empty list', () => {
       const expected = [];
 
       const actual = db.branches('foo');
@@ -41,7 +41,7 @@ describe('yaml', () => {
       expect(actual).eql(expected);
     });
 
-    it('should return empty list', ()=> {
+    it('should return empty list', () => {
       const expected = ['bar1', 'baz1'];
 
       const data = {
@@ -65,7 +65,7 @@ describe('yaml', () => {
       seeds(data);
     });
 
-    it('should return all instances', ()=> {
+    it('should return all instances', () => {
       const expected = [
         { branch: 'bar1', repo: 'foo' },
         { branch: 'baz1', repo: 'foo' },
@@ -78,7 +78,7 @@ describe('yaml', () => {
       expect(actual).eql(expected);
     });
 
-    it('should return all repo instances', ()=> {
+    it('should return all repo instances', () => {
       const expected = [
         { branch: 'bar1', repo: 'foo' },
         { branch: 'baz1', repo: 'foo' }
@@ -91,7 +91,7 @@ describe('yaml', () => {
   });
 
   describe('#list', () => {
-    it('should return empty when no file exists', ()=> {
+    it('should return empty when no file exists', () => {
       const expected = '';
 
       const actual = db.list();
@@ -99,7 +99,7 @@ describe('yaml', () => {
       expect(actual).eql(expected);
     });
 
-    it('should return printable list of deployed instances', ()=> {
+    it('should return printable list of deployed instances', () => {
       const expected = [
         'foo:',
         '  - bar1',
